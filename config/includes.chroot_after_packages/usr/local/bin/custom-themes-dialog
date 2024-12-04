@@ -1,0 +1,16 @@
+#!/bin/bash
+yad --title "Custom" --escape-ok --borders=8 \
+--button=" Exit!gtk-delete:0" \
+--form --center --width=240 --height=280 \
+--text="Custom highlight colors\n" --text-align=center \
+--window-icon=org.xfce.settings.color \
+   --form --columns=1 \
+   --field="Custom Arcadia":FBTN "bash -c 'custom-arcadia-chooser'" \
+   --field="Custom Cove":FBTN "bash -c 'custom-cove-chooser'" \
+   --field="Custom Drow":FBTN "bash -c 'custom-drow-chooser'" \
+   --field="Custom Fane":FBTN "bash -c 'custom-fane-chooser'" \
+   --field="Custom Forge":FBTN "bash -c 'custom-forge-chooser'" \
+   --field="Custom Ghost":FBTN "bash -c 'custom-ghost-chooser'" \
+   --field="Custom Ink":FBTN "bash -c 'custom-ink-chooser'" \
+   --field="Custom Island":FBTN "bash -c 'custom-island-chooser'" \
+   --field="Custom Ozark":FBTN "bash -c 'custom-ozark-chooser'"

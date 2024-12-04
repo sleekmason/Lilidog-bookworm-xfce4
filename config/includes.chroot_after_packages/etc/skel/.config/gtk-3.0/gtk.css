@@ -1,0 +1,10 @@
+/* Change panel to transparent black */
+ /*.xfce4-panel {
+   background-color: rgba(0,0,0,0.30);
+} */
+
+/* Change thunar row spacing */
+/*{
+   -ThunarAbstractIconView-row-spacing: 2;
+   -ThunarAbstractIconView-column-spacing: 0;
+ } */

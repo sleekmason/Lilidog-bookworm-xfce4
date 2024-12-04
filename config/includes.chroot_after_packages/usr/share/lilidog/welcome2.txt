@@ -1,0 +1,20 @@
+
+                 WELCOME TO LILIDOG!
+                        
+    Welcome to the Lilidog Linux xfce4 full build
+    version, providing all the programs necessary 
+    for fast, efficient, and productive use.
+     
+    Please visit our forum for more information:
+    https://www.forum.lilidog.org/
+    
+    To install Lilidog click on the red Calamares
+    desktop icon or try Menu --> Applications -->
+    System --> Install Lilidog. 
+
+    Install passwords are 'user' for username and 
+    'live' for root.
+    
+    The debian installer is also an option should
+    you prefer. Reboot to access the menu.
+    
