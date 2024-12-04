@@ -6,7 +6,7 @@
 
 ## Lightdm Greeter settings for theme, wallpaper, position, icons, and font. (Requires Sudo)
 sudo sed -i "s/theme-name.*/theme-name = Fane/g" /etc/lightdm/lightdm-gtk-greeter.conf
-sudo sed -i "s/background.*/background = \/usr\/\share\/\backgrounds\/\wallpapers\/Fane.png/g" /etc/lightdm/lightdm-gtk-greeter.conf
+sudo sed -i "s/background.*/background = \/usr\/\share\/\images\/\desktop-base\/default/g" /etc/lightdm/lightdm-gtk-greeter.conf
 sudo sed -i "s/position.*/position = -4%,end 10%,start/g" /etc/lightdm/lightdm-gtk-greeter.conf
 sudo sed -i "s/font-name.*/font-name = Noto Sans 11/g" /etc/lightdm/lightdm-gtk-greeter.conf
 
@@ -58,7 +58,7 @@ sed -i "s/FontName=.*/FontName=JetBrains Mono 11/g" ~/.config/xfce4/terminal/ter
 xres=($(echo $(xfconf-query --channel xfce4-desktop --list | grep last-image)))
 for x in "${xres[@]}"
 do
-    xfconf-query --channel xfce4-desktop --property $x --set "/usr/share/backgrounds/wallpapers/Fane.jpg"
+    xfconf-query --channel xfce4-desktop --property $x --set "/usr/share/images/desktop-base/default"
 done
 
 
