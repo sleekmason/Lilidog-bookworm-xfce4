@@ -4,5 +4,5 @@ Name=Fastfetch
 Exec=x-terminal-emulator -T 'Fastfetch' -e bash -c "fastfetch; bash"
 StartupNotify=false
 Terminal=false
-Icon=fastfetch
+Icon=utilities-system-monitor
 Categories=System;
