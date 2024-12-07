@@ -55,9 +55,7 @@ cp -r "/tmp/awesome" "$HOME/.config"
 
 ## Copy .picom file from ~/.config/awesome and copy to ~.config
 if test -e "/usr/share/xfwm/default"; then
-mv -ubf "$HOME/.config/awesome/picom.conf" "$HOME/.config"
-else
-rm "$HOME/.config/awesome/picom.conf"
+cp -f "/usr/share/lilidog/extras/picom.conf" "$HOME/.config"
 fi
 
 ## Copy .xsessionrc info to ~/.xsessionrc
