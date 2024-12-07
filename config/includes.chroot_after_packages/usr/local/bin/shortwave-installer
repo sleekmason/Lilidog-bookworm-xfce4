@@ -26,9 +26,6 @@ sed -i '/Root Folders,^checkout(rootfiles),folder/a Shortwave,            shortw
 echo ""
 echo "[0;33m-------------------------------------------------------------------------"
 echo ""
-echo "All Finished!.
-You should find a new menu entry for Shortwave in the Quickgrab section."
-echo "" 
 echo "-------------------------------------------------------------------------[0m"
 else
 echo ""

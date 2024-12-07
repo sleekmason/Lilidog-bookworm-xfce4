@@ -48,12 +48,6 @@ echo ""
 echo "" 
 echo "[0;32mAll Finished![0m"
 echo ""
-echo "[0;33mYou should find a Joplin entry in the quickgrab menu " 
-echo "Please be aware that joplin takes a long time to open.[0m" 
-echo "" 
-echo "[0;35mMenu entries will need to be removed manually if uninstalled." 
-echo "See Jgmenu Conf under Configuration in the menu for directions.[0m"
-echo ""
 echo "-----------------------------------------------------------"
 fi
 else

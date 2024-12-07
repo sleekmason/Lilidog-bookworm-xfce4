@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Printer Installer
+Exec=x-terminal-emulator -T 'Printer Setup' -e bash -c "printer-installer; read -srn1"
+StartupNotify=false
+Terminal=false
+Icon=system-software-install
+Categories=ld-misc-tools;

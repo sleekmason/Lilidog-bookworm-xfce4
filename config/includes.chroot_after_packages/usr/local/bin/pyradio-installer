@@ -22,9 +22,6 @@ sed -i '/Root Folders,^checkout(rootfiles),folder/a Pyradio,            x-termin
 echo ""
 echo "[0;33m-------------------------------------------------------------------------"
 echo ""
-echo "All Finished!.
-You should find a new menu entry for Pyradio in the Quickgrab section."
-echo "" 
 echo "-------------------------------------------------------------------------[0m"
 else
 echo ""

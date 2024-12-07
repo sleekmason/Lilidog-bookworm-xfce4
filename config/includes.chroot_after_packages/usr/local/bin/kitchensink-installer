@@ -194,6 +194,9 @@ else
 cp /usr/share/lilidog/extras/zsh/.zshrc "$HOME"/.zshrc
 #sudo chsh -s /bin/zsh "$USER"
 fi
+# Copy zsh-toggle .desktop file to /usr/share/applications
+sudo cp -f "/usr/share/lilidog/extras/zsh/ld-zsh-toggle.desktop" "/usr/share/applications"
+
 ## Place menu entries
 sed -i '/Pcmanfm,            pcmanfm,                           system-file-manager/d' "$FILE"
 sed -i '/Root Folders,^checkout(rootfiles),folder/a Pcmanfm,            pcmanfm,                           system-file-manager' "$FILE"
@@ -217,11 +220,6 @@ echo ""
 echo "   [0;33m----------------------------------------------------------------"
 echo ""
 echo "   All Finished! Look in the Toggles menu to change shell to zsh."
-echo ""
-echo "   You should find new menu entrys for most of the items installed."
-echo "" 
-echo "   Menu entries will need to be removed manually if uninstalled." 
-echo "   See Jgmenu Conf under Configuration in the menu for directions."
 echo ""
 echo "   ----------------------------------------------------------------[0m"
 else
