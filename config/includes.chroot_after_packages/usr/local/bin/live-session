@@ -9,4 +9,4 @@ sudo sed -i '/file/d' /etc/apt/sources.list
 rm -f "$HOME"/.face
 rm -f "$HOME"/.face.icon
 # Add ~/Pictures and ~/Pictures/wallpapers
-mkdir -p Pictures/wallpapers
+#mkdir -p Pictures/wallpapers

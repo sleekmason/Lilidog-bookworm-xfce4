@@ -9,4 +9,4 @@ xdg-mime default thunar.desktop inode/directory
 rm -f "$HOME"/.face
 rm -f "$HOME"/.face.icon
 # Add ~/Pictures and ~/Pictures/wallpapers
-mkdir -p Pictures/wallpapers
+# mkdir -p Pictures/wallpapers
