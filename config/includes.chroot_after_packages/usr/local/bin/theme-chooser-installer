@@ -53,7 +53,7 @@ sudo cp -rf "/tmp/themechooser/scripts/." "/usr/local/bin/"
 sudo cp -f "/tmp/themechooser/theme-chooser.desktop" "/usr/share/applications"
 
 # copy lilidog-themes config files to ~/.config
-cp -fr "/tmp/themechooser/lilidog-themes" "$HOME/.config"
+# cp -fr "/tmp/themechooser/lilidog-themes" "$HOME/.config"
 
 # copy Rofi config files to ~/.config
 cp -ar "/tmp/themechooser/rofi" "$HOME/.config"
@@ -73,6 +73,9 @@ if test -e "/usr/share/lilidog/beardog"; then
 sed -i '/Themes,              ld-themes.*/d' "$HOME/.config/jgmenu/prepend.csv"
 sed -i '/^Sounds/a Themes,              ld-themes,                                     org.xfce.settings.manager' "$HOME/.config/jgmenu/prepend.csv"
 fi
+
+# Remove openbox counterparts
+sudo rm -fr /usr/share/themes/*box
 
 echo ""
 echo "   [0;33m----------------------------------------------------------------------"
