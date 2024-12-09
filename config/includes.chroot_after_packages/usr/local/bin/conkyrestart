@@ -42,25 +42,18 @@ conkyfile=$HOME/.config/conky/scripts/conky-restart-list
 # Copy currently running conkys to file -
 ps aux | grep -i conky | awk '{ print $13 }' | tail > "$conkyfile" &&
 # Adjust file for correct lines
+sed -i "/gksudo/d" "$conkyfile"
+sed -i "/geany/d" "$conkyfile"
 sed -i "/^Conky\b/d" "$conkyfile"
 sed -i "/^conky\b/d" "$conkyfile"
 sed -i "/^.*CONKY\b/d" "$conkyfile"
 sed -i '/^[[:space:]]*$/d' "$conkyfile"
 sed -i -e 's/^/conky -c /' "$conkyfile"
-sed -i '1i #!/bin/bash' "$conkyfile" &&
+sed -i '1i #!/bin/bash' "$conkyfile"
 # Restart -
-killall conky &&
-if pgrep -x picom > /dev/null 2>&1; then
-    sed -i '/own_window_transparent/c\-- own_window_transparent = true,' "$HOME"/.config/conky/*.conf
-    sed -i '/own_window_argb_visual/c\own_window_argb_visual = true,' "$HOME"/.config/conky/*.conf
-    sed -i '/own_window_argb_value/c\own_window_argb_value = 0,' "$HOME"/.config/conky/*.conf
-else
-    sed -i '/own_window_transparent/c\own_window_transparent = true,' "$HOME"/.config/conky/*.conf
-    sed -i '/own_window_argb_visual/c\-- own_window_argb_visual = true,' "$HOME"/.config/conky/*.conf
-    sed -i '/own_window_argb_value/c\-- own_window_argb_value = 0,' "$HOME"/.config/conky/*.conf
-fi
 sleep .30
 chmod 755 "$conkyfile"
+killall conky
 $conkyfile
 exit 0
 # Remove file if desired
