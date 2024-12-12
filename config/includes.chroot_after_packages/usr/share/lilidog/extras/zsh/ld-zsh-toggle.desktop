@@ -4,5 +4,5 @@ Name=ZSH Toggle
 Exec=zsh-toggle
 StartupNotify=false
 Terminal=false
-Icon=preferences-system
+Icon=utilities-terminal
 Categories=ld-misc-tools;
