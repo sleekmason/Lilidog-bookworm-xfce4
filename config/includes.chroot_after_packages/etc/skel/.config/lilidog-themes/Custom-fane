@@ -7,6 +7,7 @@
 
 # Change gtktheme
 xfconf-query -c xsettings -p /Net/ThemeName -s "Custom-fane"
+xfconf-query -c xfwm4 -p /general/theme -s "Custom-fane"
 
 ## Change icon theme
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Obsidian-Aqua"

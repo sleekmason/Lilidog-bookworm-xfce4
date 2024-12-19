@@ -4,6 +4,7 @@
 
 ## Change gtktheme
 xfconf-query -c xsettings -p /Net/ThemeName -s "Lilidog-Slate"
+xfconf-query -c xfwm4 -p /general/theme -s "Lilidog-Slate"
 
 ## Change icon theme
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Obsidian-Cyan"

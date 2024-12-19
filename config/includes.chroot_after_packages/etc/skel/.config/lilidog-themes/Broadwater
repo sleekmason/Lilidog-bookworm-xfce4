@@ -4,6 +4,7 @@
 
 ## Change gtktheme
 xfconf-query -c xsettings -p /Net/ThemeName -s "Broadwater"
+xfconf-query -c xfwm4 -p /general/theme -s "Broadwater"
 
 ## Change icon theme
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Obsidian-Aqua"
