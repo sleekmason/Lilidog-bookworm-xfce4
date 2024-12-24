@@ -15,6 +15,9 @@ xfconf-query -c xsettings -p /Net/ThemeName -s "Fane"
 xfconf-query -c xfwm4 -p /general/theme -s "Fane"
 xfconf-query -c xsettings -p /Net/IconThemeName -s "Obsidian-Cyan"
 
+## Reset Auto Themes icon toggle back to "on"
+find "$HOME"/.config/lilidog-themes/* -not -path "$HOME/.config/lilidog-themes/default" -type f -exec sed -i '/xfconf-query -c xsettings -p \/Net\/IconThemeName/s/^# *//g' {} ';'
+
 ## System Fonts
 xfconf-query -c xsettings -p /Gtk/FontName -s "Noto Sans 11"
 xfconf-query -c xsettings -p /Gtk/MonospaceFontName -s "Monospace 10"
