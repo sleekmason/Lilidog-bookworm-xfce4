@@ -31,10 +31,11 @@
             "format": "{user-name} @ {host-name}"
         /*  "format": "{user-name} \u001b[0;34m@\u001b[0m {host-name}"  */
         },
-        {
+        /* Uncomment for load averages */  
+/*      {
             "type": "host",
             "key": " Model"
-        },
+        }, */
         {
             "type": "os",
             "key": " OS",
@@ -60,6 +61,11 @@
             "key": " Packages",
             "format": "{all}"
         },
+        /* Uncomment for desktop environment */  
+        {
+            "type": "de",
+            "key": " DE"
+        },
         {
             "type": "wm",
             "key": " Window Manager"
@@ -68,11 +74,6 @@
             "type": "wmtheme",
             "key": " WM Theme"
         },
-/* Uncomment for desktop environment */  
-/*      {
-            "type": "de",
-            "key": " Desktop Environment"
-        }, */
         {
             "type": "shell",
             "key": " Shell"
