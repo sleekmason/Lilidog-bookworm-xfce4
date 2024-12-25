@@ -102,17 +102,6 @@
 	<directories/>
 </action>
 <action>
-	<icon>preferences-desktop-wallpaper</icon>
-	<name>Set As Background</name>
-	<submenu></submenu>
-	<unique-id>1610134373979054-1</unique-id>
-	<command>feh --bg-scale %f</command>
-	<description>Set the current image as wallpaper</description>
-	<range></range>
-	<patterns>*</patterns>
-	<image-files/>
-</action>
-<action>
 	<icon>edit-copy</icon>
 	<name>Copy To Wallpapers</name>
 	<submenu></submenu>
