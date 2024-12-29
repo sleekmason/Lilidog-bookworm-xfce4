@@ -1,2 +1,2 @@
 #!/bin/bash
-conky -c /home/user/.config/conky/conky-shortcuts.conf
+conky -c $HOME/.config/conky/conky-shortcuts.conf
