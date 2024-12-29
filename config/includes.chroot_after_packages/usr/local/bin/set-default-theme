@@ -15,13 +15,10 @@ read -p "   Full Theme Reset
    Press enter to reset the theme to installation default.
    
    -------------------------------------------------------[0m
-
       
    Or close this terminal window to quit." ;
 echo ""
 ~/.config/lilidog-themes/default
-echo ""
-echo ""
 echo ""
 echo "[0;36m   -------------------------------------------------------
 
@@ -29,6 +26,5 @@ echo "[0;36m   -------------------------------------------------------
    See if the item has been removed from the system.
    
    -------------------------------------------------------[0m"
-echo ""
 echo ""
 read -n1 -p " Press any key to quit. "
