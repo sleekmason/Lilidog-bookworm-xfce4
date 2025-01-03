@@ -15,7 +15,8 @@
          "separator": " ▸  ",
          "color": {
             "separator": "blue",
-            "output": "blue" // default color
+         /* Uncomment To Change Default Color */   
+        /*  "output": "blue"  */
         }
     },
     "modules": [
@@ -28,14 +29,9 @@
         {
             "type": "title",
             "key": " Host",
-            "format": "{user-name} @ {host-name}"
-        /*  "format": "{user-name} \u001b[0;34m@\u001b[0m {host-name}"  */
+        /*  "format": "{user-name} @ {host-name}" */
+            "format": "{user-name} \u001b[0;34m@\u001b[0m {host-name}"
         },
-        /* Uncomment for load averages */  
-/*      {
-            "type": "host",
-            "key": " Model"
-        }, */
         {
             "type": "os",
             "key": " OS",
@@ -62,7 +58,7 @@
             "format": "{all}"
         },
         /* Uncomment for desktop environment */  
-        {
+		{
             "type": "de",
             "key": " DE"
         },
