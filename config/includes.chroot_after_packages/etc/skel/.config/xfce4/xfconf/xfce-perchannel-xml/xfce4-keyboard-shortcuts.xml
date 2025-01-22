@@ -58,13 +58,10 @@
       <property name="HomePage" type="string" value="exo-open --launch WebBrowser"/>
       <property name="XF86Display" type="string" value="xfce4-display-settings --minimal"/>
       <property name="override" type="bool" value="true"/>
-      <property name="&lt;Super&gt;F1" type="string" value="jgmenu"/>
       <property name="&lt;Super&gt;f" type="string" value="thunar"/>
       <property name="&lt;Super&gt;e" type="string" value="geany"/>
       <property name="&lt;Super&gt;Return" type="string" value="xfce4-terminal"/>
       <property name="&lt;Super&gt;c" type="string" value="bash -c ~/.config/conky/scripts/conky-chooser"/>
-      <property name="&lt;Super&gt;F2" type="string" value="bash -c ~/.config/rofi/scripts/rofi-familiar"/>
-      <property name="&lt;Super&gt;F3" type="string" value="rofi -show drun"/>
       <property name="&lt;Super&gt;F5" type="string" value="bash -c ~/.config/dmenu/dmenu"/>
       <property name="&lt;Super&gt;t" type="string" value="exo-open --launch TerminalEmulator"/>
       <property name="&lt;Super&gt;b" type="string" value="exo-open --launch WebBrowser"/>
