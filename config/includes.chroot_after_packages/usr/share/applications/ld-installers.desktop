@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name=Lilidog Installers
-Exec=ld-installers
+Exec=lilidog-extras-installers
 StartupNotify=false
 Terminal=false
 Icon=system-software-install

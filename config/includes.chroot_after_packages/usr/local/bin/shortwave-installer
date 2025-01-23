@@ -21,8 +21,6 @@ wget --prefer-family=IPv4 https://raw.githubusercontent.com/sleekmason/packages/
 
 sudo apt update && sudo apt install -y ./shortwave_12.0-1_all.deb gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly
 
-sed -i '/Shortwave,            shortwave,                           de.haeckerfelix.Shortwave/d' ~/.config/jgmenu/prepend.csv &&
-sed -i '/Root Folders,^checkout(rootfiles),folder/a Shortwave,            shortwave,                           de.haeckerfelix.Shortwave' ~/.config/jgmenu/prepend.csv
 echo ""
 echo "[0;33m-------------------------------------------------------------------------"
 echo ""

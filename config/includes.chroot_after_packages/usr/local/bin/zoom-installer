@@ -9,8 +9,6 @@ read -p "   [0;33mZoom Installer.[0m
    For more information: 
    [0;33mhttps://zoom.us/download[0m
    
-   A new entry for Zoom will be placed in the Quick Grab menu.
-   
    [0;33m------------------------------------------
    
    Please press enter to install Zoom.
@@ -25,17 +23,9 @@ wget --prefer-family=IPv4 https://zoom.us/client/5.14.10.3738/zoom_amd64.deb --s
 echo ""
 sudo apt update && sudo apt install --install-recommends /tmp/./zoom* &&
 rm /tmp/zoom*
-sed -i '/Zoom,            zoom,          Zoom/d' ~/.config/jgmenu/prepend.csv &&
-sed -i '/Root Folders,^checkout(rootfiles),folder/a Zoom,            zoom,          Zoom' ~/.config/jgmenu/prepend.csv
-killall -q jgmenu
 echo "----------------------------------------------------------------"
 echo ""
 echo "[0;33mAll Finished![0m"
-echo ""
-echo "[0;33mThere will be a new entry for Zoom in the Quick Grab menu.[0m"
-echo "" 
-echo "[0;33mMenu entries will need to be removed manually if uninstalled." 
-echo "See Jgmenu Conf under Configuration in the menu for directions.[0m"
 echo ""
 echo "----------------------------------------------------------------"
 else

@@ -1,0 +1,31 @@
+#!/bin/bash
+
+yad --title "Lilidog Installers" --escape-ok \
+--button=" Exit!gtk-cancel:0" --form --center --geometry=580x440-300-360 --borders=10 \
+--text="Lilidog Extras\n" --text-align=center \
+--window-icon=applications-utilities \
+    --form --columns=3 \
+    --field="Dropbox":FBTN "x-terminal-emulator -T 'Dropbox Installer' -e bash -c "dropbox-installer"" \
+    --field="Google Earth":FBTN "x-terminal-emulator -T 'Google Earth Installer' -e bash -c "google-earth-installer"" \
+    --field="Hblock":FBTN "x-terminal-emulator -T 'Hblock Installer' -e bash -c "hblock-installer"" \
+    --field="Librewolf":FBTN "x-terminal-emulator -T 'Librewolf Installer' -e bash -c "librewolf-installer"" \
+    --field="Maestral":FBTN "x-terminal-emulator -T 'Maestral Installer' -e bash -c "maestral-installer"" \
+    --field="Zoom":FBTN "x-terminal-emulator -T 'Zoom Installer' -e bash -c "zoom-installer"" \
+    --field="Nano Editor":FBTN "x-terminal-emulator -T 'Nano Installer' -e bash -c "nano-installer"" \
+    --field="VSCodium Editor":FBTN "x-terminal-emulator -T 'VSCodium Installer' -e bash -c "vscodium-installer"" \
+    --field="Xed Editor":FBTN "x-terminal-emulator -T ' Xed Editor' -e bash -c "xed-installer"" \
+    --field="Batsignal":FBTN "x-terminal-emulator -T 'Batsignal Installer' -e bash -c "batsignal-installer"" \
+    --field="Bluetooth":FBTN "x-terminal-emulator -T 'Bluetooth Installer' -e bash -c "bluetooth-installer"" \
+    --field="Brightness":FBTN "x-terminal-emulator -T 'Brightness Tray Icon Installer' -e bash -c "bright-gamma-installer"" \
+    --field="Conky Reset":FBTN "x-terminal-emulator -T 'Conky Default Installer' -e bash -c "conky-default-installer"" \
+    --field="Gnome Boxes":FBTN "x-terminal-emulator -T 'Gnome Boxes Installer' -e bash -c "gnome-boxes-installer"" \
+    --field="Kitchen Sink":FBTN "x-terminal-emulator -T 'Kitchen Sink Installer' -e bash -c "kitchensink-installer"" \
+    --field="Live Build Apps":FBTN "x-terminal-emulator -T 'Live Build Apps Installer' -e bash -c "live-build-apps-installer"" \
+    --field="Penguins Eggs":FBTN "x-terminal-emulator -T 'Penguin Eggs Installer' -e bash -c "penguins-eggs-installer"" \
+    --field="Qemu":FBTN "x-terminal-emulator -T 'Qemu Installer' -e bash -c "qemu-installer"" \
+    --field="Shortwave":FBTN "x-terminal-emulator -T 'Shortwave Installer' -e bash -c "shortwave-installer"" \
+    --field="Virtualbox":FBTN "x-terminal-emulator -T 'Virtualbox Installer' -e bash -c "virtualbox-installer-oracle"" \
+    --field="Backports":FBTN "x-terminal-emulator -T 'Backports Installer' -e bash -c "backports-installer"" \
+    --field="Backports Kernel":FBTN "x-terminal-emulator -T 'Backports Kernel Installer' -e bash -c "backports-kernel-installer"" \
+    --field="Liquorix Kernel":FBTN "x-terminal-emulator -T 'Liquorix Kernel Installer' -e bash -c "liquorix-kernel-installer"" \
+    --field="Xanmod Kernel":FBTN "x-terminal-emulator -T 'Xanmod Kernel Installer' -e bash -c "xanmod-kernel-installer""

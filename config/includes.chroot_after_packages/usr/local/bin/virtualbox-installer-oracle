@@ -38,10 +38,6 @@ echo -e "\e[1mInstalling packages...\e[0m"
 echo ""
 [ "$(find /var/cache/apt/pkgcache.bin -mtime 0 2>/dev/null)" ] || sudo apt-get update  
 sudo apt-get install -y build-essential linux-headers-$(uname -r) "$vb_package" || exit 1
-
-sed -i '/Virtualbox,         virtualbox,       virtualbox/d' ~/.config/jgmenu/prepend.csv &&
-sed -i '/Root Folders,^checkout(rootfiles),folder/a Virtualbox,         virtualbox,       virtualbox' ~/.config/jgmenu/prepend.csv
-killall -q jgmenu
 echo ""
 echo "   ----------------------------------------------------------------"
 echo ""

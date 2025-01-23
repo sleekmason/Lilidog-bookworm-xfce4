@@ -47,10 +47,6 @@ unzip -q /tmp/master.zip &&
 sudo cp -f /tmp/live-build-changes-master/usr/share/live/build/functions/firmwarelists.sh /usr/share/live/build/functions/firmwarelists.sh
 sudo cp -f /tmp/live-build-changes-master/usr/lib/live/build/config /usr/lib/live/build/config
 
-# Add line in jgmenu Utilities for filezilla
-sed -i '/Filezilla,    filezilla,                  filezilla/d' "$FILE"
-sed -i '/Extras/i Filezilla,    filezilla,                  filezilla' "$FILE"
-
 echo ""
 echo "----------------------------------------"
 echo ""
