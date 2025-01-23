@@ -65,7 +65,7 @@
       <property name="&lt;Super&gt;F5" type="string" value="bash -c ~/.config/dmenu/dmenu"/>
       <property name="&lt;Super&gt;t" type="string" value="exo-open --launch TerminalEmulator"/>
       <property name="&lt;Super&gt;b" type="string" value="exo-open --launch WebBrowser"/>
-      <property name="&lt;Super&gt;x" type="string" value="ld-logout"/>
+      <property name="&lt;Super&gt;x" type="string" value="xfce4-session-logout"/>
       <property name="&lt;Super&gt;m" type="string" value="pragha"/>
       <property name="&lt;Super&gt;g" type="string" value="toggle.gammy"/>
       <property name="&lt;Super&gt;a" type="string" value="ld-themes"/>
